@@ -202,8 +202,82 @@
             width: 160px;
             margin-bottom: 100px;
             margin-left: 10px;
+        }
 
 
+        .contact{
+            width: 100%;
+            height: auto;
+            padding: 75px 0 50px 0;
+            text-align: center;
+            background-color: purple;
+        }
+
+        .contact p{
+            margin-bottom: 50px;
+        }
+
+        .contact h2, .contact p{
+            color: white;
+        }
+
+        .contact-form{
+            max-width: 800px;
+            display: flex;
+            text-align: left;
+            max-width: 1100px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .contact-form label{
+            display: block;
+            margin-bottom: 9px;
+        }
+
+        .message{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+
+        .message textarea{
+            border-radius: 5px;
+            border: 0px;
+        }
+
+        .contact-details{
+            flex: 1;
+            margin-right: 50px;
+        }
+
+        .contact-details input{
+            width: 100px;
+            border-radius: 5px;
+            border: 0px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+
+        .message button{
+            color: blueviolet;
+            border: 0px;
+            border-radius: 5px;
+            background: cornflowerblue;
+            width: 140px;
+            height: 40px;
+            margin-top: 40px;
+            margin-left: auto;
+           text-transform: uppercase;
+           font-weight: bold;
+           cursor: pointer;
+           transition: 0,3s;     
+        }
+
+        .message button:hover{
+            background: black;
+            color: white;
+            transition: 0,2s;
         }
     </style>
 
@@ -261,7 +335,7 @@
 
 <section id="projects">
     <div class="projects">
-        <h2>Projects</h2>
+        <h2>Project</h2>
     
         <div class="Projects">
        
@@ -280,6 +354,38 @@
     </div>
 
 
+
+</section>
+
+<section id="contactme" class="contact">
+    <h2>Contact</h2>
+    <p>Use this form to get in touch</p>
+    <form class="contact-form">
+
+        
+<div class="contact-details">
+
+    <label for="name">Name</label>
+    <input type="text"  id="yourname" placeholder="Your name">
+
+    <label for="text" id="subject" placeholder="Reason for your text"></label>
+    <input type="email" id="email" placeholder="Your email address">
+
+
+</div>
+
+
+<div class="message">
+
+    <label for="msg">Message</label>
+    <textarea id="msg" rows="15"></textarea>
+    <button type="submit">Submit</button>
+
+
+
+</div>
+
+    </form>
 
 </section>
 
