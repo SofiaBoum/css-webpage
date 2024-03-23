@@ -81,7 +81,7 @@
             color: rgb(101, 13, 109);
             text-align: center;
             font-size: 50px;
-            margin: 30px 0px 100px;
+            margin: 50px 0px 100px;
             font-family: "Pacifico", cursive;;
         }
 
@@ -130,8 +130,56 @@
 
         h2{
             font-family: "Kurale", serif;
-            font-size: 40px;
+            font-size: 60px;
         }
+
+        #projects{
+            padding: 5px;
+            margin: 5%;
+            width: 90%;
+            height: auto;
+            text-align: center;
+            
+        }
+
+        .projects{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+
+        #projects h2{
+            color: white;
+          
+        }
+
+        .london{
+            width: 400px;
+            height: 400px;
+            background: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url(../1-html/london2.jpeg);
+            margin: 20px;
+            background-color:cover;
+            background-position: center;
+            
+        }
+
+        .london-text{
+            position: absolute;
+            height: 30px;
+            width: 90%;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            transition: 0,2s;
+            padding: 20px;
+        }
+          
     </style>
 
 
@@ -189,17 +237,22 @@
 <section id="projects">
     <div class="projects">
         <h2>Projects</h2>
-
-        <div class="london">
-            <div id="london-text">
-                <h3 class="london name">My London</h3>
+    
+        <div class="Projects">
+       
+    <div class="london">
+            <div class="london-text">
+                <h3 class="name">My London</h3>
                 <div class="content">
                     <p>An HTML project about the beautiful city of London</p>
             </div>
 
 <a class="button" href="../1-html/my-first-webpage.html" target="_blank">Click to have a look</a>            
 
-
+            </div>
+    </div>
+        </div>
+    </div>
 
 
 
